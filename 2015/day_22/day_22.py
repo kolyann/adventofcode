@@ -203,7 +203,7 @@ def iter_fight(hero, boss):
             #    print(r)
         turns = n_turns
         #print(wins, min_mana)
-    return min_mana, wins
+    return min_mana, list(set(wins))
 
 '''
 Hit Points: 51
