@@ -3,7 +3,7 @@ import sys
 from itertools import combinations, permutations
 
 
-data = [(s.strip().split(' ')) for s in open('test_data.txt')]
+data = [(s.strip().split(' ')) for s in open('test_data.txt.txt')]
 
 routes = {}
 cities = set()

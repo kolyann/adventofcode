@@ -65,10 +65,10 @@ print(walk_around(31, 39, num=inp))
 print(walk_around(31, 39, num=inp, part2=50))
 
 
-# for j in range(0, 100000):
-#     i = randint(0, sys.maxsize)
-#     n, f = walk_around(0, 0, i, 10000)
-#     if n > 1000:
-#         f()
-#         print(i, n)
-#         print('\n'*5)
+for j in range(0, 100000):
+    i = randint(0, sys.maxsize)
+    n, f = walk_around(0, 0, i, 10000)
+    if n > 500:
+        f()
+        print(i, n)
+        print('\n'*5)
