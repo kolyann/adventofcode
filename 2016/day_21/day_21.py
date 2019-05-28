@@ -43,12 +43,6 @@ def unscramble(s, commands):
         if parse(perm, commands) == s:
             return ''.join(perm)
 
-
-cc = '''reverse positions 3 through 7
-move position 1 to position 7
-swap position 6 with position 3
-swap letter g with letter b'''.split('\n')
-
 cmds = open('data.txt').readlines()
 
 print(parse('abcdefgh', cmds))
