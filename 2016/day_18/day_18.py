@@ -1,5 +1,3 @@
-trap_set = {(1, 1, 0), (0, 1, 1), (1, 0, 0), (0, 0, 1)}
-
 def rtn(r):
     return tuple(0 if s=='.' else 1 for s in r)
 
