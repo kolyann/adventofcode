@@ -11,7 +11,7 @@ ss = '''0 <-> 2
 def parse_progs(inp):
     data = {}
     for i in inp:
-        n, nums = re.split(r' \<\-\> ', i)
+        n, nums = re.split(r' <-> ', i)
         data[int(n)] = set(int(s.strip()) for s in nums.split(','))
     return data
 
