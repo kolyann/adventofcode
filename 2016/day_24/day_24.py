@@ -30,7 +30,6 @@ def find_costs(lab):
 
     costs = defaultdict(lambda: sys.maxsize)
     for node, (x, y) in nodes.items():
-        print("Running %s" % node)
         walks = [(x, y)]
         step = 0
         visited = set()
@@ -45,12 +44,10 @@ def find_costs(lab):
                 for dx, dy in [(-1, 0), (0, 1), (0, -1), (1, 0)]:
                     nx, ny = dx+_x, dy+_y
                     if not is_wall(lab[nx][ny]) and (nx, ny) not in visited:
-
                         new_walks.append((nx, ny))
             step += 1
             walks = list(set(new_walks))
 
-    print('calculating costs')
     mcost = sys.maxsize
     p2cost = sys.maxsize
     for p in permutations(nodes.keys()):
